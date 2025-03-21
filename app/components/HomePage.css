@@ -1,0 +1,108 @@
+/* General reset for body and html */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* General Container Styling */
+.container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Sends the image to the background */
+}
+
+.lightOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* White overlay to lighten the image */
+  z-index: 1; /* Ensures the overlay is above the image */
+}
+
+.headerTextContainer {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #043339;
+  text-align: center;
+  z-index: 2; /* Keeps the text on top */
+}
+
+.headerTitle {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.headerSubtitle {
+  font-size: 24px;
+  color: #043339;
+  margin: 10px 0 20px;
+}
+
+.headerButtons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primaryButton {
+  background-color: #173c4e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #173c4e;
+}
+
+.secondaryButton {
+  background-color: white;
+  color: #173c4e;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: 2.2px solid #173c4e;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #d6d6d6;
+}

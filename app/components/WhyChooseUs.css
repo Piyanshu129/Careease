@@ -1,0 +1,136 @@
+.why-choose-us-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.why-choose-us-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.brand-name {
+  color: rgba(45, 83, 125, 1);
+  ; /* CareEase brand color */
+  font-size: 40px;
+}
+
+.why-choose-us-container p {
+  font-family: 'Alexandria';
+  font-weight: 400px;
+  font-size: 20px;
+  color:  rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+.features {
+  font-family: 'Inter';
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  height: 478px; /* Adjust height as needed */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+ 
+
+}
+
+.feature-image {
+  width: 100%;
+  height: 478px;
+  object-fit: cover;
+}
+
+.content-container {
+  position: absolute;
+  bottom: -50px; /* Adjust to overlap the image */
+  height: 250px;
+  width: 90%;
+  padding: 20px;
+  background-color: #163560; /* Default background color for dark cards */
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-container h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #f0d700; /* Yellow color for title */
+}
+
+.brand-name-oval {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border: 3px solid rgba(64, 222, 116, 0.74);
+  border-radius: 20px;
+  color:  rgba(45, 83, 125, 1); /* Adjust text color if needed */
+  font-weight: bold;
+  font-size: 36px;
+}
+.content-container p {
+  font-family: 'Inter';
+  font-size: 14px;
+  color: #f0d700;
+  margin-top: 5px;
+}
+.ams{
+  font-size: 22px;
+  color: black; /* Yellow color for icon */
+  margin-bottom: 10px;
+
+}
+.ass{
+  font-size: 30px;
+  font-size: 14px;
+  color: black; /* Yellow color for icon */
+  margin-bottom: 10px;
+
+}
+.icon-personalized-care,
+.icon-friendly-service {
+  font-size: 30px;
+  color: #f0d700; /* Yellow color for icon */
+  margin-bottom: 10px;
+}
+.icon-certified-caregivers{
+  font-size: 30px;
+  color: black; /* Yellow color for icon */
+  margin-bottom: 10px;
+
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+  }
+}
+.icon-small {
+  font-size: 2px; /* Adjust to desired size */
+}

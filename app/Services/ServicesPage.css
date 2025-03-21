@@ -1,0 +1,102 @@
+/* Overall container styles */
+.services-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Header styles */
+.services-header {
+  margin-bottom: 30px;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Grid layout for service cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px; /* Space between rows and columns */
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+/* Service card styles */
+.service-card {
+  border-radius: 10px;
+  padding: 20px;
+  height: 300px; /* Consistent height */
+  border: 2px solid black; /* Black border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+}
+
+/* Icon styles */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Service card text */
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Light card styles (gray background with #163560 text color) */
+.service-card.light {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #163560; /* Replace black with #163560 */
+}
+
+.service-card.light .icon {
+  color: #163560; /* Icon color matches text */
+}
+
+/* Dark card styles (blue background and white text) */
+.service-card.dark {
+  background-color: #163560; /* Blue background */
+  color: white; /* White text */
+}
+
+.service-card.dark .icon {
+  color: white; /* White icons for blue cards */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
